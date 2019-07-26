@@ -11,7 +11,6 @@ body {
 }
 
 span {
-  color: white;
   display: block;
   font-size: 3rem;
   text-align: center;
@@ -19,9 +18,24 @@ span {
 
 button {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 3px solid black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 3px solid white;
+  color: white;
 }
 
 #playboard {
@@ -37,10 +51,16 @@ button {
     position: absolute;
     min-width: 600px;
     min-height: 300px;
-    top: 350px;
+    top: 450px;
     left: 70%;
     transform: translate(-50%, -50%);
-    background-color: black;
+    background-color: $background-color;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    span:first-child {
+      padding-top: 30px;
+    }
   }
 
   #game-won {
@@ -48,10 +68,22 @@ button {
     position: absolute;
     min-width: 600px;
     min-height: 300px;
-    top: 350px;
+    top: 450px;
     left: 70%;
     transform: translate(-50%, -50%);
-    background-color: black;
+    background-color: $background-color;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    span:first-child {
+      padding-top: 30px;
+    }
+  }
+
+  #temp {
+    display: none;
+    height: 100px;
+    background-color: $background-color;
   }
 
   #password {
@@ -70,11 +102,13 @@ button {
   }
 
   #display {
-    background-image: url("/dist/img/hangman-1.png");
+    background-image: url("/dist/img/hangman-1.jpg");
     width: 500px;
     height: 300px;
     margin-top: 50px;
     display: inline-block;
+    border: 3px solid black;
+    border-radius: 10px;
   }
 
   #alphabet-table {
@@ -82,7 +116,7 @@ button {
     width: 503px;
     height: 300px;
     margin-top: 50px;
-    display: inline-block;
+    display: block;
     float: right;
 
     .letter {

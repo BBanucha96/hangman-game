@@ -99,11 +99,11 @@ function compareLetters(let) {
     miss++;
     picNumber++;
 
-    if (miss >= 7)
+    if (miss >= 8)
     {
       lose();
     }
-    document.getElementById("display").style.backgroundImage = "url('/dist/img/hangman-"+picNumber+".png')";
+    document.getElementById("display").style.backgroundImage = "url('/dist/img/hangman-"+picNumber+".jpg')";
   }
 }
 
@@ -111,12 +111,14 @@ function win() {
   document.getElementById("password").style.display = "none";
   document.getElementById("alphabet-table").style.display = "none";
   document.getElementById("game-won").style.display = "block";
+  document.getElementById("temp").style.display = "block";
 }
 
 function lose() {
   document.getElementById("password").style.display = "none";
   document.getElementById("alphabet-table").style.display = "none";
   document.getElementById("game-over").style.display = "block";
+  document.getElementById("temp").style.display = "block";
 }
 
 function restartGame()
