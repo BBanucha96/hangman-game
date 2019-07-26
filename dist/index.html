@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hangman game</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/hangman.js" async></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div id="playboard">
+      <div id="game-over">
+        <span>GAME OVER</span>
+        <span>TRY AGAIN?</span>
+        <button onclick="restartGame()" id="yes">YES</button>
+      </div>
+      <div id="game-won">
+        <span>YOU WIN</span>
+        <span>ONE MORE?</span>
+        <button id="yes">YES</button>
+      </div>
+      <div id="password">
+        <p id="pass"></p>
+      </div>
+      <div id="display"></div>
+      <div id="alphabet-table"></div>
+    </div>
+  </body>
 </html>
