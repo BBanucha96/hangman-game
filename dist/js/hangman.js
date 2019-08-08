@@ -103,7 +103,7 @@ function compareLetters(let) {
     {
       lose();
     }
-    document.getElementById("display").style.backgroundImage = "url('/dist/img/hangman-"+picNumber+".jpg')";
+    document.getElementById("display").style.backgroundImage = "url('dist/img/hangman-"+picNumber+".jpg')";
   }
 }
 
