@@ -24,6 +24,10 @@ function writePassword() {
   document.getElementById("pass").innerHTML = password_hidden;
 }
 
+function startDisplay() {
+  document.getElementById("display").style.backgroundImage = "url('dist/img/hangman-1.jpg')"
+}
+
 //filling div with letters (based on ASCII table)
 function fillAlphabetTable() {
   var alphabet = "";
@@ -127,6 +131,7 @@ function restartGame()
 }
 
 function loadElements() {
+  startDisplay();
   rewritePassword();
   writePassword();
   fillAlphabetTable();

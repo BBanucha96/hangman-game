@@ -80,7 +80,6 @@ button:hover {
       font-size: 2rem;
       font-weight: bold; }
   #playboard #display {
-    background-image: url("/dist/img/hangman-1.jpg");
     width: 500px;
     height: 300px;
     margin-top: 50px;
